@@ -332,6 +332,9 @@
   .row2{display:grid;grid-template-columns:1fr;gap:14px;}
   @media(min-width:520px){.row2{grid-template-columns:1fr 1fr;}}
   .form-note{font-size:0.76rem;color:var(--ink-dim);margin-top:2px;}
+  .privacy-consent{display:flex;align-items:flex-start;gap:9px;font-size:0.78rem;color:var(--ink-2);line-height:1.45;}
+  .privacy-consent input{margin-top:3px;accent-color:var(--accent);flex-shrink:0;}
+  .privacy-consent a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;}
 
   /* ---------- FOOTER ---------- */
   footer{border-top:2px solid var(--ink);padding:40px 0;}
@@ -353,7 +356,6 @@
       </a>
       <div class="nav-links">
         <a href="#servicos">Serviços</a>
-        <a href="#portfolio">Portfólio</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#contato">Contato</a>
       </div>
@@ -501,141 +503,6 @@
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
-  <!-- ATENÇÃO: seção com conteúdo de EXEMPLO. Troque nomes de projetos, descrições e depoimentos por casos reais assim que tiver. -->
-  <section id="portfolio">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow mono">portfólio</span>
-        <span class="placeholder-flag">⚠ conteúdo de exemplo — troque pelos seus projetos reais</span>
-        <h2 class="title">Alguns projetos que já saíram do papel.</h2>
-        <p>Um recorte do que a Vollys Platform já entregou — de sites institucionais a automações rodando 24h no WhatsApp.</p>
-      </div>
-
-      <div class="portfolio-grid">
-
-        <!-- Projeto exemplo 1 -->
-        <div class="portfolio-card">
-          <div class="portfolio-thumb">
-            <div class="thumb-bar"><span></span><span></span><span></span></div>
-            <div class="thumb-body">
-              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="200" fill="#EDEEEF"/>
-                <rect x="0" y="0" width="400" height="46" fill="#2D3E4E"/>
-                <rect x="20" y="16" width="70" height="14" rx="3" fill="#D9D9D9"/>
-                <rect x="290" y="16" width="90" height="14" rx="7" fill="#5D17EB"/>
-                <rect x="20" y="76" width="180" height="18" rx="3" fill="#2D3E4E"/>
-                <rect x="20" y="104" width="230" height="10" rx="3" fill="#B8BBBE"/>
-                <rect x="20" y="122" width="150" height="10" rx="3" fill="#B8BBBE"/>
-                <rect x="20" y="150" width="110" height="28" rx="14" fill="#5D17EB"/>
-              </svg>
-            </div>
-          </div>
-          <div class="portfolio-body">
-            <span class="portfolio-tag">site institucional</span>
-            <h3>Studio Bella — Salão de Beleza</h3>
-            <p>Landing page com agendamento integrado ao WhatsApp e catálogo de serviços.</p>
-            <span class="portfolio-note">// exemplo — substitua por um projeto real</span>
-          </div>
-        </div>
-
-        <!-- Projeto exemplo 2 -->
-        <div class="portfolio-card">
-          <div class="portfolio-thumb">
-            <div class="thumb-bar"><span></span><span></span><span></span></div>
-            <div class="thumb-body">
-              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="200" fill="#1F2937"/>
-                <rect x="24" y="24" width="180" height="16" rx="3" fill="#F3F2F0"/>
-                <rect x="24" y="54" width="130" height="10" rx="3" fill="#8A97A3"/>
-                <rect x="24" y="90" width="230" height="46" rx="10" fill="#2D3E4E" stroke="#5D17EB" stroke-width="1.5"/>
-                <circle cx="46" cy="113" r="10" fill="#5D17EB"/>
-                <rect x="66" y="105" width="150" height="8" rx="3" fill="#B8BBBE"/>
-                <rect x="66" y="118" width="100" height="8" rx="3" fill="#6E7D8A"/>
-                <rect x="270" y="90" width="106" height="46" rx="10" fill="#5D17EB" opacity="0.15" stroke="#5D17EB" stroke-width="1.5" stroke-dasharray="4 4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="portfolio-body">
-            <span class="portfolio-tag">automação com ia</span>
-            <h3>Nutri Ana Paula — Consultório</h3>
-            <p>Chatbot que qualifica pacientes, tira dúvidas frequentes e agenda a primeira consulta sem intervenção humana.</p>
-            <span class="portfolio-note">// exemplo — substitua por um projeto real</span>
-          </div>
-        </div>
-
-        <!-- Projeto exemplo 3 -->
-        <div class="portfolio-card">
-          <div class="portfolio-thumb">
-            <div class="thumb-bar"><span></span><span></span><span></span></div>
-            <div class="thumb-body">
-              <svg viewBox="0 0 400 200" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="400" height="200" fill="#EDEEEF"/>
-                <rect x="0" y="0" width="120" height="200" fill="#2D3E4E"/>
-                <rect x="20" y="20" width="80" height="10" rx="3" fill="#F3F2F0"/>
-                <rect x="20" y="44" width="60" height="8" rx="3" fill="#8A97A3"/>
-                <rect x="20" y="64" width="70" height="8" rx="3" fill="#8A97A3"/>
-                <rect x="150" y="24" width="90" height="60" rx="10" fill="#FFFFFF" stroke="#C3C4C6"/>
-                <rect x="166" y="40" width="58" height="8" rx="3" fill="#B8BBBE"/>
-                <rect x="166" y="56" width="40" height="8" rx="3" fill="#5D17EB"/>
-                <rect x="256" y="24" width="90" height="60" rx="10" fill="#FFFFFF" stroke="#C3C4C6"/>
-                <rect x="272" y="40" width="58" height="8" rx="3" fill="#B8BBBE"/>
-                <rect x="272" y="56" width="40" height="8" rx="3" fill="#5D17EB"/>
-                <rect x="150" y="100" width="196" height="60" rx="10" fill="#FFFFFF" stroke="#C3C4C6"/>
-                <rect x="166" y="116" width="120" height="8" rx="3" fill="#B8BBBE"/>
-                <rect x="166" y="132" width="90" height="8" rx="3" fill="#B8BBBE"/>
-              </svg>
-            </div>
-          </div>
-          <div class="portfolio-body">
-            <span class="portfolio-tag">singlechat crm</span>
-            <h3>Ótica VisãoClara — Rede de Lojas</h3>
-            <p>Painel único reunindo o WhatsApp das 3 unidades, com atendentes organizados por fila e etiquetas.</p>
-            <span class="portfolio-note">// exemplo — substitua por um projeto real</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="testimonials">
-        <div class="section-head" style="margin-bottom:28px;">
-          <span class="eyebrow mono">depoimentos</span>
-          <h2 class="title" style="font-size:1.5rem;">O que dizem sobre a Vollys.</h2>
-        </div>
-        <div class="testimonial-grid">
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="quote">"O site ficou muito melhor do que eu imaginava, e o atendimento automático no WhatsApp já me economiza um tempo enorme todo dia."</p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">SB</div>
-              <div><b>Studio Bella</b><span>exemplo — substitua pelo cliente real</span></div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="quote">"Antes eu perdia mensagem de cliente o tempo todo. Com o SingleChat consigo ver tudo organizado num painel só."</p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">AP</div>
-              <div><b>Nutri Ana Paula</b><span>exemplo — substitua pelo cliente real</span></div>
-            </div>
-          </div>
-
-          <div class="testimonial-card">
-            <div class="stars">★★★★★</div>
-            <p class="quote">"Entrega rápida, comunicação clara em cada etapa e o resultado ficou com a nossa cara. Recomendo demais."</p>
-            <div class="testimonial-person">
-              <div class="testimonial-avatar">VC</div>
-              <div><b>Ótica VisãoClara</b><span>exemplo — substitua pelo cliente real</span></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA / FORM -->
   <section id="contato">
     <div class="wrap">
@@ -690,8 +557,12 @@
             <label for="mensagem">mensagem</label>
             <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o que você precisa..."></textarea>
           </div>
+          <label class="privacy-consent">
+            <input type="checkbox" name="privacidade" required>
+            <span>Li e concordo com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o uso destes dados para atendimento do meu pedido.</span>
+          </label>
           <button type="submit" class="btn btn-primary" style="justify-content:center;">Enviar pedido de orçamento</button>
-          <p class="form-note">Ao enviar, abrimos o WhatsApp com a mensagem já pronta para a Vollys Platform.</p>
+          <p class="form-note">Ao enviar, abrimos o WhatsApp com a mensagem pronta. Os dados serão compartilhados com o WhatsApp para iniciar o atendimento.</p>
         </form>
       </div>
     </div>
@@ -708,9 +579,10 @@
       <a href="#servicos">Serviços</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#contato">Contato</a>
+      <a href="privacidade.html">Política de Privacidade</a>
       <a href="https://wa.me/5511914209329?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Vollys%20Platform%20e%20quero%20saber%20mais." target="_blank" rel="noopener">WhatsApp: (11) 91420-9329</a>
     </div>
-    <div class="footer-copy">© 2026 Vollys Platform. Todos os direitos reservados.</div>
+    <div class="footer-copy">34.229.579 SAULO DE LIMA GASPAR · CNPJ 34.229.579/0001-80<br>© 2026 Vollys Platform. Todos os direitos reservados.</div>
   </div>
 </footer>
 
@@ -719,7 +591,7 @@
 </a>
 
 <script>
-  const cards = document.querySelectorAll('.service-card, .portfolio-card');
+  const cards = document.querySelectorAll('.service-card');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach((e, i)=>{
       if(e.isIntersecting){
