@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17231d">
+  <title>Casa Verde — Catálogo Digital</title>
+  <meta name="description" content="Demonstração de catálogo digital com carrinho e pedido pelo WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notice">Catálogo demonstrativo criado pela <strong>Vollys Platform</strong></div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Casa Verde, início">
+      <span class="brand-mark">CV</span><span><b>Casa Verde</b><small>natural & artesanal</small></span>
+    </a>
+    <nav><a href="#produtos">Produtos</a><a href="#como-comprar">Como comprar</a></nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrinho">Sacola <span id="cartCount">0</span></button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Seleção artesanal</span>
+        <h1>Pequenos cuidados,<br><em>grandes pausas.</em></h1>
+        <p>Produtos naturais escolhidos para transformar a rotina em um ritual de bem-estar.</p>
+        <a class="primary" href="#produtos">Explorar coleção</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="leaf leaf-a"></div><div class="leaf leaf-b"></div>
+        <div class="jar"><span>botânica</span></div>
+        <p>feito com calma</p>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>01</span><b>Escolha fácil</b><small>Produtos organizados por categoria</small></div>
+      <div><span>02</span><b>Pedido rápido</b><small>Finalize direto pelo WhatsApp</small></div>
+      <div><span>03</span><b>Pagamento simples</b><small>Pix ou link de pagamento</small></div>
+    </section>
+
+    <section class="catalog" id="produtos">
+      <div class="section-title">
+        <div><span class="eyebrow">Nosso catálogo</span><h2>Escolha seus favoritos</h2></div>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar produto"></label>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty" id="emptyState" hidden>Nenhum produto encontrado.</p>
+    </section>
+
+    <section class="how" id="como-comprar">
+      <div><span class="eyebrow">Sem complicação</span><h2>Do catálogo para o WhatsApp em segundos.</h2></div>
+      <ol>
+        <li><b>Adicione</b><span>Escolha produtos e quantidades.</span></li>
+        <li><b>Revise</b><span>Confira sua sacola e o total.</span></li>
+        <li><b>Finalize</b><span>Envie o pedido ou pague online.</span></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">CV</span><span><b>Casa Verde</b><small>catálogo demonstrativo</small></span></div><p>Modelo personalizável pela Vollys Platform.</p></footer>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <button class="drawer-backdrop" id="closeCartBackdrop" aria-label="Fechar carrinho"></button>
+    <div class="drawer-panel">
+      <div class="drawer-head"><div><span class="eyebrow">Seu pedido</span><h2>Minha sacola</h2></div><button id="closeCart" aria-label="Fechar">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><b>Sua sacola está vazia</b><span>Adicione produtos para começar.</span></div>
+      <div class="cart-footer" id="cartFooter" hidden>
+        <div class="total"><span>Total estimado</span><b id="cartTotal">R$ 0,00</b></div>
+        <button class="checkout whatsapp" id="whatsappCheckout">Enviar pedido pelo WhatsApp</button>
+        <button class="checkout payment" id="paymentCheckout">Pagar agora</button>
+        <small>Frete e prazo são confirmados no atendimento.</small>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script><script src="photos.js"></script>
+</body>
+</html>
